@@ -12,7 +12,9 @@ app.set("view engine", "hbs");
 //render ra trang home (index.hbs)
 //get: get method
 app.get("/", (req, res) => {
-  res.render("index");
+  let name = "xuannbgch17346";
+  let address = "2 pham van bach";
+  res.render("index", {n : name, a: address});
 });
 
 //chạy web server
